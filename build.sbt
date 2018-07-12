@@ -26,3 +26,13 @@ lazy val exampleDwangoCakeDI = Project("example-dwango-cake-di", file("example-d
 lazy val exampleTestScalaTest = Project("example-test-scalatest", file("example-test-scalatest"))
   .settings(commonSettings: _*)
   .settings(testSettings: _*)
+
+
+lazy val exampleScalaDoc = Project("example-scaladoc", file("example-scaladoc"))
+  .settings(commonSettings: _*)
+  .settings(testSettings: _*)
+  .settings(
+    Seq(
+      scalacOptions in (Compile,doc) := Seq("-diagrams")
+    )
+  )
