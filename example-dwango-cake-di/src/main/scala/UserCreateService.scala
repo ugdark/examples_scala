@@ -1,4 +1,5 @@
 trait UserCreateService {
+
   /**
     * XXXUser を作成する
     *
