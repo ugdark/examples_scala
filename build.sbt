@@ -36,3 +36,5 @@ lazy val exampleScalaDoc = Project("example-scaladoc", file("example-scaladoc"))
       scalacOptions in(Compile, doc) := Seq("-diagrams")
     )
   )
+
+
