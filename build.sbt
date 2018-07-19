@@ -33,6 +33,6 @@ lazy val exampleScalaDoc = Project("example-scaladoc", file("example-scaladoc"))
   .settings(testSettings: _*)
   .settings(
     Seq(
-      scalacOptions in (Compile,doc) := Seq("-diagrams")
+      scalacOptions in(Compile, doc) := Seq("-diagrams")
     )
   )

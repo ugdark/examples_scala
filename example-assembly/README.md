@@ -4,6 +4,7 @@
 ## 実行
 
 ```bash
+$ cd example-assembly
 $ sbt run # Hello World! 
 ```
 
