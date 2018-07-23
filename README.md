@@ -19,6 +19,11 @@ scala学習用
 - △[マルチプロジェクトの確認](./example-multi-project/README.md)
 - △[Futureに慣れる](./example-basic-future/README.md)
 
+### パスワード生成
+- [パスワード生成確認](./example-password-bcrypt/README.md)
+
+
+
 ### JSON
 
 - [scalaでのJSON考察](./example-json/README.md)
