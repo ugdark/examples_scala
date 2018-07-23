@@ -38,3 +38,7 @@ lazy val exampleScalaDoc = Project("example-scaladoc", file("example-scaladoc"))
   )
 
 
+lazy val exampleBasicFuture = Project("example-basic-future", file("example-basic-future"))
+  .settings(commonSettings)
+
+

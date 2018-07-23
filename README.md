@@ -17,7 +17,7 @@ scala学習用
 
 - [JARの作成方法](./example-assembly/README.md)
 - △[マルチプロジェクトの確認](./example-multi-project/README.md)
-
+- △[Futureに慣れる](./example-basic-future/README.md)
 
 ### JSON
 
