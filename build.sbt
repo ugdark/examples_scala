@@ -37,6 +37,10 @@ lazy val exampleScalaDoc = Project("example-scaladoc", file("example-scaladoc"))
     )
   )
 
+lazy val exampleBasiCollectionConvert = Project("example-basic-collection-convert", file("example-basic-collection-convert"))
+  .settings(commonSettings)
+
+
 lazy val exampleBasicFuture = Project("example-basic-future", file("example-basic-future"))
   .settings(commonSettings)
 
@@ -46,5 +50,3 @@ lazy val examplePasswordBCrypt = Project("example-password-bcrypt", file("exampl
   .settings(
     libraryDependencies += "org.springframework.security" % "spring-security-core" % "5.0.6.RELEASE"
   )
-
-

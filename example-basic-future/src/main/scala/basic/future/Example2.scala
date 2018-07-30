@@ -8,8 +8,9 @@ import scala.util.{Failure, Success}
 /**
   * Futureを同期させる処理
   */
-object Example1 extends App {
+object Example2 extends App {
 
+  Future.unit
   val start = System.currentTimeMillis
   val f: Future[String] = for {
     f1res <- f1
