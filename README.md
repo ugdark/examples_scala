@@ -22,7 +22,9 @@ scala学習用
 ### パスワード生成
 - [パスワード生成確認](./example-password-bcrypt/README.md)
 
-
+### Config
+- [configの使い方](./example-config/README.md)
+- [jarでのconfig切り替え](./example-assembly-config/README.md)
 
 ### JSON
 
