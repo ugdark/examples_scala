@@ -49,6 +49,15 @@ scala学習用
 - flyway sbtでjarの管理をしてからsbtパラメータ渡しにしたい。
 - multi-puroject dependsOn / aggregate がまだしっくりこない
 
+## idea関係
+
+### プロジェクト内別build.sbtの読み込み方
+
+一部別のbuild.sbtを用意してるのだがbuild.sbtをシンプルに保ちたいからです。     
+IDEAから開く時に`File -> New -> Module from XXX` で  
+example-assemblyとかを選択すれば1つのプロジェクトとして使えます。  
+
+
 ## 公式
 - [sbt](https://www.scala-sbt.org/) 
 - [Maven Repository](https://mvnrepository.com/)
@@ -56,3 +65,5 @@ scala学習用
 
 - [Scala入門時に役立つ情報まとめ](https://qiita.com/nesheep5/items/49019b9df4836d36ec1f)
 - [ドワンゴScala研修テキスト](https://dwango.github.io/scala_text/)
+
+
