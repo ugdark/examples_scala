@@ -56,3 +56,29 @@ lazy val exampleConfig = Project("example-config", file("example-config"))
   .settings(
     libraryDependencies += "com.typesafe" % "config" % "1.3.3"
   )
+
+// github関係
+
+lazy val exampleGithubPublish= Project("example-github-publish", file("example-github-publish"))
+  .settings(
+    name := "example-github-publish",
+    version := "0.1-SNAPSHOT",
+    organization := "com.example",
+    scalaVersion := "2.12.6"
+  )
+  .settings(
+    publishTo := Some(
+      Resolver.file("example-github-publish", file("/path/to/mavenrepo")) // /path/to/mavenrepo は自分のlocal mavenrepoのpathを指定
+        (Patterns(true, Resolver.mavenStyleBasePattern))
+    )
+  )
+
+// githubをmaven repositoryとして使う例のやつ
+lazy val exampleGithubPull = Project("example-github-pull", file("example-github-pull"))
+  .settings(commonSettings)
+  .settings(
+    resolvers += "Maven Repository on Github" at "http://ugdark.github.io/mavenrepo/",
+    libraryDependencies += "com.example" % "example-github-publish_2.12" % "0.1-SNAPSHOT"
+  )
+
+

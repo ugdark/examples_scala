@@ -1,6 +1,10 @@
 # examples_scala
 scala学習用
 
+## はじめに 
+build.sbtが肥大化して重くもなってきたので  
+ある程度はbuild.sbtをコメントアウトして使います  
+
 ## お題
 
 △ = 改善したい
@@ -33,6 +37,14 @@ scala学習用
 ### マイグレーション
 
 - △[flyway](./example-flyway/README.md)
+
+
+### github 
+
+- [mavenリポジトリとして利用](./example-github-publish/README.md)
+- [mavenリポジトリとして登録したのを使う方](./example-github-pull/README.md)
+
+- [githubをそのまま使う](http://yoshiori.hatenablog.com/entry/20120324/1332618170)
 
 
 ### アーキテクチャとかそういうのに
