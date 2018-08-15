@@ -48,6 +48,10 @@ build.sbtが肥大化して重くもなってきたので
 - [githubをそのまま使う](http://yoshiori.hatenablog.com/entry/20120324/1332618170)
 
 
+### build.sbt周り
+
+- [scalac にもっと警告してもらう](https://qiita.com/kawachi/items/1c1d063de91c5445e8bc)
+
 ### アーキテクチャとかそういうのに
 - [DwangoDIお試し](./example-assembly/README.md)
 
@@ -74,9 +78,13 @@ example-assemblyとかを選択すれば1つのプロジェクトとして使え
 ## 公式
 - [sbt](https://www.scala-sbt.org/) 
 - [Maven Repository](https://mvnrepository.com/)
+
+
 ## 参考文献
 
 - [Scala入門時に役立つ情報まとめ](https://qiita.com/nesheep5/items/49019b9df4836d36ec1f)
 - [ドワンゴScala研修テキスト](https://dwango.github.io/scala_text/)
+- [Design Patterns in Scala](https://gist.github.com/gakuzzzz/6cbf407928fbc637c64a371bcc20f050)
+
 
 

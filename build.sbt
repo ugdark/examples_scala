@@ -21,29 +21,33 @@ lazy val testSettings = libraryDependencies ++= {
 
 
 lazy val exampleDwangoCakeDI = Project("example-dwango-cake-di", file("example-dwango-cake-di"))
-  .settings(commonSettings: _*)
+  .settings(commonSettings)
 
 lazy val exampleTestScalaTest = Project("example-test-scalatest", file("example-test-scalatest"))
-  .settings(commonSettings: _*)
-  .settings(testSettings: _*)
+  .settings(commonSettings)
+  .settings(testSettings)
 
 
 lazy val exampleScalaDoc = Project("example-scaladoc", file("example-scaladoc"))
-  .settings(commonSettings: _*)
-  .settings(testSettings: _*)
+  .settings(commonSettings)
+  .settings(testSettings)
   .settings(
     Seq(
       scalacOptions in(Compile, doc) := Seq("-diagrams")
     )
   )
 
-lazy val exampleBasicCollectionConvert = Project("example-basic-collection-convert", file("example-basic-collection-convert"))
+lazy val exampleBasicCollectionSeq = Project("example-basic-collection-seq", file("example-basic-collection-seq"))
   .settings(commonSettings)
 
+lazy val exampleBasicCollectionConvert = Project("example-basic-collection-convert", file("example-basic-collection-convert"))
+  .settings(commonSettings)
 
 lazy val exampleBasicFuture = Project("example-basic-future", file("example-basic-future"))
   .settings(commonSettings)
 
+lazy val exampleBasicOptionEitherTry = Project("example-basic-option-either-try", file("example-basic-option-either-try"))
+  .settings(commonSettings)
 
 lazy val examplePasswordBCrypt = Project("example-password-bcrypt", file("example-password-bcrypt"))
   .settings(commonSettings)
@@ -82,3 +86,14 @@ lazy val exampleGithubPull = Project("example-github-pull", file("example-github
   )
 
 
+lazy val exampleUseCase = Project("example-use-case", file("example-use-case"))
+  .settings(commonSettings)
+  .settings(
+    // https://mvnrepository.com/artifact/org.scalaz/scalaz-core
+    libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.2.25"
+  )
+
+
+lazy val studyS99 = Project("study-S99", file("study-S99"))
+  .settings(commonSettings)
+  .settings(testSettings)
