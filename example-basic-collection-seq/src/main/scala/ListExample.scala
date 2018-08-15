@@ -2,7 +2,8 @@ object ListExample extends App {
 
   def assert(message: String, ls1: Any, ls2: Any): Unit = {
     println(
-      message + ":ls1:[" + ls1 + "]:ls2:[" + ls2 + "]result:[" + (ls1 == ls2) + "]")
+      message + ":ls1:[" + ls1 + "]:ls2:[" + ls2 + "]result:[" + (ls1 == ls2) + "]"
+    )
   }
 
   assert(
