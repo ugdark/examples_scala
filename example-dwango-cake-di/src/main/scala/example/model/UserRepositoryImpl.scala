@@ -3,7 +3,8 @@ package example.model
 import scala.util.Try
 
 object UserRepositoryImpl extends UserRepository {
-  private val values: scala.collection.mutable.Map[Long, User] = scala.collection.mutable.Map.empty
+  private val values: scala.collection.mutable.Map[Long, User] =
+    scala.collection.mutable.Map.empty
 
   def store(user: User): Try[User] = Try {
     values.update(user.id, user)

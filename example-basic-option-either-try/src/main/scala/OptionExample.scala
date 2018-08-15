@@ -1,11 +1,9 @@
-
 /**
   * Option型は主にnullの取扱いを担う
   * haskellではMaybeだからmaybeがよく言われる。
   *
   */
 object OptionExample extends App {
-
 
   val maybeMoney: Option[Int] = Some(1000)
   //val maybeMoney: Option[Int] = None
@@ -39,20 +37,18 @@ object OptionExample extends App {
 
   println(Some(3).fold(throw new RuntimeException)(_ * 3))
 
-
   val v1 = Some(3)
   val v2 = Some(5)
   val v3 = Some(8)
   val result1: Option[Option[Int]] = v1.map(i1 => v2.map(i2 => i1 * i2))
 
   // 下の３つは同じ解
-  val result1Simple1:Option[Int] = v1.map(i1 => v2.map(i2 => i1 * i2)).flatten
-  val result1Simple2:Option[Int] = v1.flatMap(i1 => v2.map(i2 => i1 * i2))
+  val result1Simple1: Option[Int] = v1.map(i1 => v2.map(i2 => i1 * i2)).flatten
+  val result1Simple2: Option[Int] = v1.flatMap(i1 => v2.map(i2 => i1 * i2))
 
-  val resultSimple3:Option[Int] = for {
+  val resultSimple3: Option[Int] = for {
     i1 <- v1
     i2 <- v2
   } yield i1 * i2
-
 
 }

@@ -1,5 +1,3 @@
 package domain
 
-class usecases {
-
-}
+class usecases {}

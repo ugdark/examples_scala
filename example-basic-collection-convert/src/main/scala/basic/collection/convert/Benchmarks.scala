@@ -8,7 +8,6 @@ import scala.compat.Platform.currentTime
   */
 object Benchmarks extends App {
 
-
   def check1 = {
     val data: Seq[(Int, Int)] = (1 to 5000000).map { num =>
       (num, num * 1000)

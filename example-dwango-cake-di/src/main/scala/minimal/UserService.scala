@@ -3,7 +3,6 @@ package minimal
 /**
   * 実際にUserRepositoryを使う側
   */
-
 trait UserService extends UsesUserRepository {
   // 略
 }

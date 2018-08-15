@@ -1,8 +1,8 @@
-
 object ListExample extends App {
 
   def assert(message: String, ls1: Any, ls2: Any): Unit = {
-    println(message + ":ls1:[" + ls1 + "]:ls2:[" + ls2 + "]result:[" + (ls1 == ls2) + "]")
+    println(
+      message + ":ls1:[" + ls1 + "]:ls2:[" + ls2 + "]result:[" + (ls1 == ls2) + "]")
   }
 
   assert(
@@ -22,5 +22,9 @@ object ListExample extends App {
 
   assert("last", 7, Seq(1, 4, 7).last)
   assert("ケツから取り除いたやつになる init", Seq(1, 4), Seq(1, 4, 5, 7).init.init)
+
+  assert("Nilは List.empty", Nil, List.empty)
+
+  assert("構成の確認", Seq(1, 2, 3), 1 :: (2 :: (3 :: Nil)))
 
 }

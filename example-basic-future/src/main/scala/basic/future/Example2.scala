@@ -32,8 +32,8 @@ object Example2 extends App {
   println("future.isCompleted[" + f.isCompleted + "]") // falseになる
 
   f.onComplete {
-    case Success(msg) => println("check:"+msg)
-    case Failure(t: Throwable)   => println(t.getMessage)
+    case Success(msg)          => println("check:" + msg)
+    case Failure(t: Throwable) => println(t.getMessage)
   }
 
   f.foreach { text =>
@@ -43,9 +43,9 @@ object Example2 extends App {
   for {
     f1result <- f1
     f2result <- f2
-  } yield  {
-    println("aa:"+f1result)
-    println("bb"+f2result)
+  } yield {
+    println("aa:" + f1result)
+    println("bb" + f2result)
   }
 
   // Awaitで待つ処理
@@ -54,6 +54,5 @@ object Example2 extends App {
   println("Await実行後:" + (System.currentTimeMillis - start).toInt) // 同期されるので2500超え
 
   println("future.isCompleted[" + f.isCompleted + "]") // trueになる
-
 
 }

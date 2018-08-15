@@ -2,7 +2,6 @@ package domain.errors
 
 import domain.models.UserId
 
-
 object Errors {
 
   def userNotFound(userId: UserId): Error =

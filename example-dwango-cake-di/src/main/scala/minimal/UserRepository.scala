@@ -3,7 +3,6 @@ package minimal
 /**
   * UserRepositoryのインターフェース部分
   */
-
 trait UsesUserRepository {
   val userRepository: UserRepository
 }

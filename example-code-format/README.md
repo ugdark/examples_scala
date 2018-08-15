@@ -1,6 +1,15 @@
 # 目的
 - scalaは標準のcodeチェック機構ないので探す
 
+#### 使い方
+
+```bash
+sbt scalafmtCheck // fmt検証 fmtとcheckもうちょっと理解したい
+sbt scalafmt // fmt実行 ideaにてpluginで適応されてるなら不要
+sbt test:scalafmt // fmt実行 通常とtestはまとめられない?
+sbt test  // テスト動作確認
+```
+
 ## チェックしたい事（多言語での基準）
 
 - クラスは1000行まで(もっと減らしてもいいけど)

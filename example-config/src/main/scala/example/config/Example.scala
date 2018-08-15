@@ -14,7 +14,6 @@ object Example extends App {
     println("environment:[" + config.getString("environment") + "]")
   }
 
-
   //val config: Config = ConfigFactory.load(System.getProperty("user.dir") + "/application.conf")
   //val child = config.getString("example.sec2.child")
 

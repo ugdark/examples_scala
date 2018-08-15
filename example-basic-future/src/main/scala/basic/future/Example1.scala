@@ -31,7 +31,7 @@ object Example1 extends App {
   println("future.isCompleted[" + f.isCompleted + "]") // falseになる
 
   f.onComplete {
-    case Success(msg) => println("check:" + msg)
+    case Success(msg)          => println("check:" + msg)
     case Failure(t: Throwable) => println(t.getMessage)
   }
 
@@ -53,6 +53,5 @@ object Example1 extends App {
   println("Await実行後:" + (System.currentTimeMillis - start).toInt) // 同期されるので2500超え
 
   println("future.isCompleted[" + f.isCompleted + "]") // trueになる
-
 
 }

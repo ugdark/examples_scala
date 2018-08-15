@@ -10,14 +10,15 @@ object Example1 extends App {
   var dbPasswordHash: String = ""
 
   def sequence = {
-    val password: String = "tpd[auLPx&eRLv};Timf9tepFMqP@Jgx9oVsmGjsJngmg3q2er26Cd$eX4LMWh[u"
+    val password: String =
+      "tpd[auLPx&eRLv};Timf9tepFMqP@Jgx9oVsmGjsJngmg3q2er26Cd$eX4LMWh[u"
     // hash化
     val passwordHash = createHash(password)
 
     (1 to 20).foreach { i =>
       val passwordHash = createHash(password)
       val check = new BCryptPasswordEncoder().matches(password, passwordHash)
-      println("check" + i + "[" + passwordHash + "]["+ check +"]")
+      println("check" + i + "[" + passwordHash + "][" + check + "]")
     }
 
     // DB保存

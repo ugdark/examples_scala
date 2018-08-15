@@ -1,4 +1,3 @@
-
 trait UsesUserRepository {
   val userRepository: UserRepository
 }

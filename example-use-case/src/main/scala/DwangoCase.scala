@@ -8,6 +8,4 @@ case class Cont[R, A](run: (A => R) => R) {
 
 }
 
-class DwangoCase {
-
-}
+class DwangoCase {}
