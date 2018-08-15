@@ -83,8 +83,13 @@ example-assemblyとかを選択すれば1つのプロジェクトとして使え
 ## 参考文献
 
 - [Scala入門時に役立つ情報まとめ](https://qiita.com/nesheep5/items/49019b9df4836d36ec1f)
-- [ドワンゴScala研修テキスト](https://dwango.github.io/scala_text/)
 - [Design Patterns in Scala](https://gist.github.com/gakuzzzz/6cbf407928fbc637c64a371bcc20f050)
+
+### 初心者向け
+- [ドワンゴScala研修テキスト](https://dwango.github.io/scala_text/)
+- [やってみようScala! シリーズ1](https://qiita.com/f81@github/items/8d67fb3f211fb3e149db)
+
+
 
 
 
