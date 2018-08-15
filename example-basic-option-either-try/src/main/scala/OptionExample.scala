@@ -37,9 +37,9 @@ object OptionExample extends App {
 
   println(Some(3).fold(throw new RuntimeException)(_ * 3))
 
-  val v1 = Some(3)
-  val v2 = Some(5)
-  val v3 = Some(8)
+  val v1                           = Some(3)
+  val v2                           = Some(5)
+  val v3                           = Some(8)
   val result1: Option[Option[Int]] = v1.map(i1 => v2.map(i2 => i1 * i2))
 
   // 下の３つは同じ解
