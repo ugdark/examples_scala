@@ -17,7 +17,7 @@ object Example1 extends App {
 
     (1 to 20).foreach { i =>
       val passwordHash = createHash(password)
-      val check        = new BCryptPasswordEncoder().matches(password, passwordHash)
+      val check = new BCryptPasswordEncoder().matches(password, passwordHash)
       println("check" + i + "[" + passwordHash + "][" + check + "]")
     }
 

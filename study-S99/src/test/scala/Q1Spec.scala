@@ -1,6 +1,5 @@
 import org.scalatest.FreeSpec
 
-
 /**
   * (*) Find the last element of a list.
   * Example:
@@ -12,8 +11,8 @@ class Q1Spec extends FreeSpec {
   // たぶん答え一度みてるからキレイにできてる。
   def last[A](ls: List[A]): A = ls match {
     case x :: Nil => x
-    case _ :: x => last(x)
-    case _ => throw new RuntimeException("empty list")
+    case _ :: x   => last(x)
+    case _        => throw new RuntimeException("empty list")
   }
 
   "Find the last element of a list." - {

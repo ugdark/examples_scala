@@ -5,7 +5,7 @@ import example.model.{MixInUserRepository, User}
 object Example extends App with MixInUserRepository {
 
   def check() = {
-    val yamada    = User(1L, "test@example.com", "yamada")
+    val yamada = User(1L, "test@example.com", "yamada")
     val nishiyama = User(2L, "test@example.com", "yamada")
     userRepository.store(yamada)
     userRepository.store(nishiyama)

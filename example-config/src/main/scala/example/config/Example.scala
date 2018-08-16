@@ -6,7 +6,7 @@ object Example extends App {
 
   def applicationConf() {
     val config: Config = ConfigFactory.load()
-    val child          = config.getString("example.sec2.child")
+    val child = config.getString("example.sec2.child")
     println("example.sec2.child:[" + child + "]")
 
     val example = config.getConfig("example")

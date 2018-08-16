@@ -7,7 +7,6 @@
 sbt scalafmtCheck // fmt検証 fmtとcheckもうちょっと理解したい
 sbt scalafmt // fmt実行 ideaにてpluginで適応されてるなら不要
 sbt test:scalafmt // fmt実行 通常とtestはまとめられない?
-sbt test  // テスト動作確認
 ```
 
 ## チェックしたい事（多言語での基準）

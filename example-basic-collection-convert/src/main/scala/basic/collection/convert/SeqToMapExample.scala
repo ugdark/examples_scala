@@ -12,7 +12,7 @@ object SeqToMapExample extends App {
     )
     // key にidのmapを返したい
     val test: Seq[(Long, User)] = datastore.map(u => (u.id, u))
-    val test2: Map[Long, User]  = datastore.map(u => (u.id, u)) toMap
+    val test2: Map[Long, User] = datastore.map(u => (u.id, u)) toMap
 
     println(test)
     println(test2)
