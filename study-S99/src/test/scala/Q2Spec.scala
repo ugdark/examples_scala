@@ -10,7 +10,7 @@ import org.scalatest.FreeSpec
 class Q2Spec extends FreeSpec {
 
   def penultimate[A](ls: List[A]): A = ls match {
-    case x :: Nil      => throw new RuntimeException("one element")
+    case _ :: Nil      => throw new RuntimeException("one element")
     case x :: _ :: Nil => x
     case _ :: x        => penultimate(x)
     case _             => throw new RuntimeException("empty list")
