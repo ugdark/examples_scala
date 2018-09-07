@@ -18,6 +18,7 @@ build.sbtが肥大化して重くもなってきたので
 - [unit testしたい](./example-scaladoc/README.md)
 
 - [カバレッジ](example-test-coverage/README.md)
+
 ### 基本
 
 - [JARの作成方法](./example-assembly/README.md)
@@ -39,6 +40,8 @@ build.sbtが肥大化して重くもなってきたので
 
 - △[flyway](./example-flyway/README.md)
 
+### 負荷計測
+- [gatling](example-gatlings/README.md)
 
 ### github 
 
