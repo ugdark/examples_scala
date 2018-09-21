@@ -100,6 +100,9 @@ lazy val exampleUseCase = Project("example-use-case", file("example-use-case"))
     libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.2.25"
   )
 
+lazy val exampleJVMMemory = Project("example-jvm-memory", file("example-jvm-memory"))
+  .settings(commonSettings)
+
 
 lazy val studyS99 = Project("study-S99", file("study-S99"))
   .settings(commonSettings)
