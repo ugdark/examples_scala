@@ -27,11 +27,11 @@ class Q3Spec extends FreeSpec {
       assert(2 == nth(2, List(1, 1, 2, 3, 5, 8)))
     }
 
-    "BigData" in {
-      assertThrows[OutOfMemoryError] {
-        nth(2, (1 to Int.MaxValue).toList)
-      }
-    }
+//    "BigData" in {
+//      assertThrows[OutOfMemoryError] {
+//        nth(2, (1 to Int.MaxValue).toList)
+//      }
+//    }
 
     "indexが範囲外" in {
       assertThrows[RuntimeException] {
