@@ -15,7 +15,7 @@ build.sbtが肥大化して重くもなってきたので
 
 ### Test
 
-- [unit testしたい](./example-scaladoc/README.md)
+- [unit testしたい](./example-test-scalatest/README.md)
 
 - [カバレッジ](example-test-coverage/README.md)
 
