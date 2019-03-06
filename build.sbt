@@ -70,27 +70,27 @@ lazy val exampleConfig = Project("example-config", file("example-config"))
 
 // github関係
 
-lazy val exampleGithubPublish= Project("example-github-publish", file("example-github-publish"))
-  .settings(
-    name := "example-github-publish",
-    version := "0.1-SNAPSHOT",
-    organization := "com.example",
-    scalaVersion := "2.12.6"
-  )
-  .settings(
-    publishTo := Some(
-      Resolver.file("example-github-publish", file("/path/to/mavenrepo")) // /path/to/mavenrepo は自分のlocal mavenrepoのpathを指定
-        (Patterns(true, Resolver.mavenStyleBasePattern))
-    )
-  )
+//lazy val exampleGithubPublish= Project("example-github-publish", file("example-github-publish"))
+//  .settings(
+//    name := "example-github-publish",
+//    version := "0.1-SNAPSHOT",
+//    organization := "com.example",
+//    scalaVersion := "2.12.6"
+//  )
+//  .settings(
+//    publishTo := Some(
+//      Resolver.file("example-github-publish", file("/path/to/mavenrepo")) // /path/to/mavenrepo は自分のlocal mavenrepoのpathを指定
+//        (Patterns(true, Resolver.mavenStyleBasePattern))
+//    )
+//  )
 
 // githubをmaven repositoryとして使う例のやつ
-lazy val exampleGithubPull = Project("example-github-pull", file("example-github-pull"))
-  .settings(commonSettings)
-  .settings(
-    resolvers += "Maven Repository on Github" at "http://ugdark.github.io/mavenrepo/",
-    libraryDependencies += "com.example" % "example-github-publish_2.12" % "0.1-SNAPSHOT"
-  )
+//lazy val exampleGithubPull = Project("example-github-pull", file("example-github-pull"))
+//  .settings(commonSettings)
+//  .settings(
+//    resolvers += "Maven Repository on Github" at "http://ugdark.github.io/mavenrepo/",
+//    libraryDependencies += "com.example" % "example-github-publish_2.12" % "0.1-SNAPSHOT"
+//  )
 
 
 lazy val exampleUseCase = Project("example-use-case", file("example-use-case"))
@@ -107,3 +107,17 @@ lazy val exampleJVMMemory = Project("example-jvm-memory", file("example-jvm-memo
 lazy val studyS99 = Project("study-S99", file("study-S99"))
   .settings(commonSettings)
   .settings(testSettings)
+
+lazy val exampleAkkaHttp = Project("example-akka-http", file("example-akka-http"))
+  .settings(commonSettings)
+  .settings(
+    libraryDependencies ++= {
+      Seq(
+        "com.typesafe.akka" %% "akka-http"   % "10.1.7",
+        "com.typesafe.akka" %% "akka-stream" % "2.5.19",
+        "com.typesafe.akka" %% "akka-http-spray-json" % "10.1.7"
+        
+      )
+    }
+
+  )
